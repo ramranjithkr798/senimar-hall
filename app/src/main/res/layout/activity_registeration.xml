@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/b6"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".registeration">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER DETIALS"
+                android:textSize="35sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="HALL NAME:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/hall_name"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="CAPICITY:"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/capacity"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="48dp"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TYPE OF HALL:"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/type_of_hall"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="LOCATION:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="38dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="PROJECTOR:"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/projector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="22dp">
+
+                <RadioButton
+                    android:id="@+id/projector_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:text="YES" />
+
+                <RadioButton
+                    android:id="@+id/projector_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="NO" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="IN-CHARGE:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/incharge"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:hint="NAME"
+                android:layout_marginLeft="38dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="PHONE-NUMBER:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/incharge_no"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:hint="IN-CHARGE NO"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="WIRE MICK:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/wire_mic"
+                android:layout_width="255dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:hint="NO OF MICK"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="HAND MICK:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/hand_mic"
+                android:layout_width="245dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:hint="NO OF MICK"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="COLLER MICK:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/coller_mic"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:hint="NO OF MICK"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="GUEST ROOM:"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/guest_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="22dp">
+                <RadioButton
+                    android:id="@+id/guest_room_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:text="YES" />
+
+                <RadioButton
+                    android:id="@+id/guest_room_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="NO" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="MARKER BOARD:"
+            android:textSize="20sp" />
+        <RadioGroup
+            android:id="@+id/marker_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp">
+            <RadioButton
+                android:id="@+id/marker_board_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="25dp"
+                android:text="YES" />
+
+            <RadioButton
+                android:id="@+id/marker_board_no"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="NO" />
+        </RadioGroup>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="AIR COOLER:"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/AC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="35dp">
+                <RadioButton
+                    android:id="@+id/ac_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:text="YES" />
+
+                <RadioButton
+                    android:id="@+id/ac_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="NO" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="NON-TEACHING:"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/non_teaching"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:hint="NAME"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="PHONE-NUMBER:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/non_teaching_no"
+                android:layout_width="215dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:hint="NON-TEACHING NO"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Upload_img_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:autoLink="none"
+                android:text="UPLOAD IMAGE"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/up_img"
+                android:layout_width="270dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/submit"
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SUBMIT" />
+            <Button
+                android:visibility="gone"
+                android:id="@+id/UpdateHall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="UPDATE"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

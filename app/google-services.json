@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "292229495827",
+    "firebase_url": "https://seminarhall-13ad0.firebaseio.com",
+    "project_id": "seminarhall-13ad0",
+    "storage_bucket": "seminarhall-13ad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292229495827:android:c5a3ac76c12a2bd6",
+        "android_client_info": {
+          "package_name": "com.example.ramra.seminarhall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292229495827-eak9ha5nh6ea8l84prkrh68a6ljpq6ke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ramra.seminarhall",
+            "certificate_hash": "4a99ff027c6635f8e5468a8629ef4cceecb6ea8c"
+          }
+        },
+        {
+          "client_id": "292229495827-hk5p56rftbqefekoldhucae4v9qrc8in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ddD3K4cFPEtFDb-oSRK-8-7FY7PhD7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292229495827-hk5p56rftbqefekoldhucae4v9qrc8in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

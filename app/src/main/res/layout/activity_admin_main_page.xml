@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/b5"
+    android:layout_height="match_parent"
+    tools:context=".admin_mainPage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="ADMIN"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HALL TYPE:"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/Hall_type_ad"
+                    android:layout_marginRight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HALL NAME:"
+                    android:textSize="20sp"/>
+                <Spinner
+                    android:id="@+id/Hall_name_ad"
+                    android:layout_marginRight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/hallDet"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="120dp"
+                    android:text="HALL  DETIALS"
+                    android:layout_height="60dp" />
+                <Button
+                    android:id="@+id/deleteHall"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="120dp"
+                    android:text="DELETE    HALL"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/UpdateHall"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="120dp"
+                    android:text="UPDATE DETIALS"
+                    android:layout_height="60dp" />
+                <Button
+                    android:id="@+id/NewHall"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="120dp"
+                    android:text="NEW         HALL"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/StatusButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="120dp"
+                    android:text="STATUS"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

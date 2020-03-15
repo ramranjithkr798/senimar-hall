@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ramra.seminarhall">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Type_Hall"
+            android:label="TYPE OF HALL"
+            android:parentActivityName=".home" />
+        <activity
+            android:name=".list_audtorium"
+            android:label="NAME&apos;S OF HALL" />
+        <activity android:name=".detials_of_auditorium" />
+        <activity
+            android:name=".registeration"
+            android:label="HALL REGISTRATION" />
+        <activity
+            android:name=".admin_mainPage"
+            android:label="ADMIN HOME" />
+        <activity android:name=".Request_to_Book" />
+        <activity android:name=".userLogin" />
+        <activity android:name=".login_SignUp" />
+        <activity android:name=".Status_of_booking"></activity>
+    </application>
+
+</manifest>
